@@ -1,0 +1,9 @@
+<h1>Toots</h1>
+
+<% @toots.each do |toot| %>
+  <%= toot.body %>
+  <%= link_to 'See Toot', toot_path(toot.id) %>
+  <%= link_to 'Delete', toot_path(toot.id), method: :delete, data: { confirm: "are you sure?" } %>
+
+<% end %>
+<%= link_to "Start Tooting", new_toot_path %>
