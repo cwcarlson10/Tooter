@@ -25,6 +25,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'devise'
 gem 'simple_form'
+gem 'omniauth-twitter'
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 group :development, :test do
@@ -36,6 +37,8 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'spring-commands-rspec'
 end
+
+gem 'dotenv-rails', :groups => [:development, :test]
 
 group :test do
   gem 'minitest-reporters'
